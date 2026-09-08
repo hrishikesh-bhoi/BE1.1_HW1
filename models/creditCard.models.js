@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const creditCardSchema = new mongoose.Schema({
     bankName: String,
     cardNumber: String,
-    expireDate: Date,
+    expireDate: String,
     cardHolderName: String,
     cardType: String,
 });

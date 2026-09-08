@@ -6,10 +6,10 @@ const noteSchema = new mongoose.Schema({
         required: true,
     },
     content: String,
-    category: [{
+    category: {
         type: String,
         enum: ["Personal", "Work", "Study", "Ideas", "Journal", "Other"],
-    },],
+    },
 
     tags: [{
         type: String,

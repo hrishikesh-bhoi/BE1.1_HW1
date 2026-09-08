@@ -13,10 +13,10 @@ const smartphoneSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    operatingSystem: [{
+    operatingSystem: {
         type: String,
         enum: ["Android", "iOS", "Windows Phone", "Other"],
-    },],
+    },
     displaySize: String,
     storage: String,
     ram: String,
